@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: var(--color-secondary);
 }
 
@@ -30,6 +30,23 @@ h2 {
 h3 {
     font-size: 3rem;
 }
+
+/* Grids */
+
+.grid {
+    display: grid;
+    padding: 2rem 3rem;
+}
+
+.grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid__image {
+    width: 100%;
+}
+
+/* blocks */
 
 /* Icons */
 .nav__icon {
