@@ -1,26 +1,17 @@
-/* Color Palette */
-/* #408E91
-#408E91
-#0A4D68 */
-:root {
-    --color-primar: #0002A1;
-    --color-secondary: #0C134F;
-}
+/* Global Styles */
 
-/* Typography */
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: 'Arvo', serif;;
-    font-size: 1.4rem;
-    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    color: darkblue;
 }
 
 h1 {
-    font-size: 5rem;
-    color: var(--color-secondary);
+    font-size: 6rem;
 }
 
 h2 {
@@ -31,71 +22,136 @@ h3 {
     font-size: 3rem;
 }
 
-/* Grids */
-
-.grid {
-    display: grid;
-    padding: 2rem 3rem;
+/* Header Styles */
+nav {
+    background-color: #f8f7f9;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
 }
 
-.grid--1x2 {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav__item a {
+    text-decoration: none;
+}
+
+.nav__image {
+    width: 120%;
+    justify-self: right;
+}
+
+.nav *:hover {
+    color: #2c5eff;
+    cursor: pointer;
+}
+
+/* Grids:--------------------------------------------------- */
+.grid {
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+
+    .grid .hero-content {
+        text-align: left;
+    }
+}
+
+/* Block */
+.block {
+    padding: 2rem 6rem;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #2c5eff;
+    color: #fff;
+    text-align: center;
+}
+
+.hero__title {
+    margin: 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #2c5eff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fafeff;
+}
+
+/* Services Section Styles */
+.services {
+    text-align: center;
+}
+
+
+.service-card {
+    background-color: #f8f7f9;
+    border-radius: 10px;
+    padding: 4rem 2rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1rem;
+    color: #2c5eff;
+    justify-content: space-evenly;
+}
+
+.card__image {
+    width: 50%;
+    justify-self: center;
+}
+
+.service-card p {
+    color: darkblue;
+    text-align: center;
+}
+
+
+.services .grid--1x2 {
     grid-template-columns: 1fr 1fr;
 }
 
-.grid__image {
-    width: 100%;
-}
-
-/* blocks */
-
-/* Icons */
-.nav__icon {
-    width: 3%;
-    outline: 0;
-    cursor: pointer;
-    /* margin: 1rem; */
-}
-
-/* lists:-------------------------------------------- */
-.list {
-    list-style: none;
-    color: #112B3C;
-    padding-left: 0;
-    margin: 0;
-}
-
-.list--inline .list__item {
-    display: inline-block;
-    margin-right: 2rem;
-    cursor: pointer;
-}
-
-.nav .list__item:hover {
-    transform: scale(1.1);
-    transition: transform .2s;
-    text-shadow: 0 0 .4px ;
-}
-
-
-/* Navigation Bar */
-.nav {
-    background: #EFEFEF;
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    padding: 0 1rem;
-    align-items: center;
-    padding: 1rem;
-}
-
-.nav__list {
-    color: #b9c3cf;
-    width: 100%;
-    margin: 0;
-}
-
-
-.nav__item {
-    padding: .5rem 2rem;
-    /* border-bottom: 1px solid rgb(36, 36, 37); */
+/* Footer Styles */
+footer {
+    background-color: #2c5eff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }

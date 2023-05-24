@@ -12,13 +12,57 @@
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="grid grid--1x2">
-            <div class="grid__content">
-                <h1>Wecome To CrackShock, Get Ready To Dump Those Intruders</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quia. Veritatis laudantium expedita natus temporibus necessitatibus.</p>
+        <header>
+            <nav class="nav">
+                <div class="nav__title">CrackShock</div>
+                <ul>
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#">Services</a></li>
+                    <li class="nav__item"><a href="#">About Us</a></li>
+                    <li class="nav__item"><a href="#">Contact</a></li>
+                    <li class="nav__item"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero block grid grid--1x2">
+            <div class="hero-content">
+                <h1 class="hero__title">Welcome to our Trust Services Provider</h1>
+                <p>We offer secure and reliable trust services to protect your digital assets.</p>
+                <a href="#" class="cta-button">Get Started</a>
             </div>
-                <img class="grid__image" src="./images/logo.svg" alt="">
-        </div>        
-        <link rel="stylesheet" href="js/app.js">
+            <img src="./images/logo.svg" class="nav__image" alt="">
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-card grid grid--1x2">
+                <div class="card__content">
+                    <h3>Encryption</h3>
+                    <p>We provide industry-standard encryption algorithms to secure your data.</p>
+                </div>
+                <img src="./images/encryption.png" alt="" class="card__image">
+            </div>
+            <div class="service-card card--right grid grid--1x2">
+                <img src="images/key.png" alt="" class="card__image">
+                <div class="card__content">
+                    <h3>Key Management</h3>
+                    <p>Efficient and secure management of cryptographic keys to safeguard your assets.</p>
+                </div>
+            </div>
+            <div class="service-card grid grid--1x2">
+                <div class="card__content">
+                    <h3>PKI Solutions</h3>
+                    <p>Robust Public Key Infrastructure for secure authentication and digital certificates.</p>
+                </div>
+                <img src="images/pki.png" alt="" class="card__image">
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 TSP Website. All rights reserved.</p>
+        </footer>
+
+        <script src="app.js"></script>
     </body>
 </html>
